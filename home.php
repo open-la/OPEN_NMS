@@ -1,14 +1,3 @@
-<?php
-
-$conn = mysqli_connect("localhost", "dinusha", "Gecko#1991", "open_nms");
-// Check connection
-if ($conn->connect_error) {
-die("Connection failed: " . $conn->connect_error);
-}
-$sql = mysqli_query($conn, "SELECT COUNT(*) as num FROM message");
-$data=mysqli_fetch_assoc($sql);
-$log_count =$data['num']
- ?>
 
 
 <html lang="en" dir="ltr">
